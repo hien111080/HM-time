@@ -1,3 +1,29 @@
+@keyframes bay-sm{
+  0%{
+    background-color: rgb(222, 135, 135);
+  }
+  14%{
+    background-color: rgb(255, 221, 0);
+  }
+  28%{
+    background-color: rgb(58, 153, 51);
+  }
+  42%{
+    background-color: rgb(54, 51, 153);
+  }
+  56%{
+    background-color: #e881e8;
+  }
+  70%{
+    background-color: rgb(153, 51, 70);
+  }
+  84%{
+    background-color: rgb(211, 133, 133);
+  }
+  100%{
+    background-color: burlywood;
+  }
+}
 *{
     margin: 0;
     padding: 0;
@@ -47,12 +73,16 @@
     padding:30px 43% 30px 43%;
     text-align: center;
     background-color: burlywood;
+    animation-name: bay-sm;
+    animation-duration: 10s;
 }
+
 
 #content{
     width: 75%;
     float: left;
     height: 3%;  
+    padding-bottom: 3%;
 }
 #right{
     float: left;
@@ -84,16 +114,15 @@
   text-decoration: none;
   color: rgb(0, 0, 0);
   display: block;
-  border: 4px solid white;
   transition: 0.2s;
 }
 #content a:hover{
-  border-color: orange;
   color: orange;
 }
 .text{
   clear: left;
   padding-top:20px ;
+  position: relative;
 }
 #viet{
   padding: 3%;
@@ -112,13 +141,49 @@ h4 ,h5 ,h6{
   padding-top: 20px;
   padding-right:20px ;
 }
-#tim-kiem{
-  float: left;
 
-}
-#các-bài-viết-mới ul li{
+#các-bài-viết-mới ul li,#các-bài-viết-mới ul li a{
   padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
 }
+
 #chuyen-muc ul li{
   padding: 10px;
+}
+.text img:hover{
+  transform: scale(1.2);
+}
+.text p{
+  position: absolute;
+  left: 25%;
+  top: 70px;
+  color: gray;
+}
+.text a{
+  font-size: 25px;
+  transition: 1.5s;
+}
+.text a:hover{
+  transform: scale(1.1);
+}
+#tim-kiem button:active{
+  transform: scale(0.8);
+}
+#content ul li{
+  padding: 3%;
+}
+body{
+  clear: both;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#chuyen-muc ul li a, #chuyen-muc ul li{
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
 }
